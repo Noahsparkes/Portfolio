@@ -19,12 +19,8 @@ const Header = () => {
       >
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <img
-              className="h-8 w-auto"
-              src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-              alt=""
-            />
+            <span className="sr-only">Noah Sparkes</span>
+            <h1 className="h-8 w-auto">Noah Sparkes</h1>
           </a>
         </div>
         <div className="flex lg:hidden">
