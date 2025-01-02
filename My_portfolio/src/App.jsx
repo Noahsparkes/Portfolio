@@ -4,17 +4,19 @@ import "./index.css"
 // App.jsximport React from 'react';
 import Header from './components/Header';
 import About from './components/About';
-import About2 from './components/About2';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import BackToTop from './components/BackToTop';
+import ThemeToggle from './components/ThemeToggle';
+import IntroSection from './components/IntroSection';
 
 const App = () => {
   return (
     <div className="container mx-auto">
       <Header />
+      <ThemeToggle />
+      <IntroSection />
       <About />
-      <About2 />
       <Projects />
       <Contact />
       <BackToTop />

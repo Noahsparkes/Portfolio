@@ -54,15 +54,10 @@ const BackToTop = () => {
 
       {/* Explanation Section */}
       <div
-        className="container mx-auto mt-4 text-center dark:text-white"
-        
-      >
-        <p className="mb-4">
-          Start scrolling the page and a strong{" "}
-          <strong>"Back to top" button </strong> will appear in the
-          <strong> bottom right corner</strong> of the screen.
-        </p>
-        <p>Click this button and you will be taken to the top of the page.</p>
+        className="container mx-auto mt-4 text-center dark:text-white">
+          <div>
+          <h1>© Noah Sparkes. All Rights Reserved.</h1>
+        </div>
       </div>
     </>
   );
