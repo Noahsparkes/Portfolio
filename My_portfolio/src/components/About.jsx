@@ -1,25 +1,42 @@
-const About2 = () => {
-    return (
-      <section className="flex flex-col md:flex-row items-center md:items-start gap-8 p-6 md:p-12  rounded-lg shadow-md">
-        
-  
-        {/* About Text */}
-        <div className="flex flex-col text-center md:text-left">
-          <h2 className="text-xl md:text-2xl text-gray-600 mb-4">
+import React from "react";
+
+const About = () => {
+  return (
+    <section className="py-16 px-6 md:px-20 lg:px-40 bg-gray-300 bg-opacity-5 rounded-xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        {/* Text Content */}
+        <div className="space-y-6">
+          <h2 className="text-3xl font-bold text-gray-800">
             About Me
           </h2>
-          <p className="text-gray-700 leading-relaxed mb-6">
-          I’m at the beginning of my software development journey, after graduating from CodeSpace  
-         I have been working on various projects and growing my skills with self-guided learning. 
-         From building simple web applications to experimenting with DevOps concepts, 
-         I’m constantly seeking new challenges that push me to think critically and improve my craft.
-         When I am not coding, you can find me on a golf course at the 🏌🏾‍♂️, in a  pool 🏊🏾‍♂️ or gym 🏋🏾‍♂️.
+          <p className="text-gray-600 text-lg leading-relaxed">
+            I’m at the start of my journey as a software developer, having graduated from CodeSpace. Since then, I’ve been building various projects and expanding my skills through self-guided learning.
           </p>
-         
+          <p className="text-gray-600 text-lg leading-relaxed">
+            From creating simple web applications to exploring DevOps concepts, I thrive on taking on challenges that encourage critical thinking and help me grow as a developer.
+          </p>
+          <p className="text-gray-600 text-lg leading-relaxed">
+            Outside of coding, you’ll often find me on the golf course 🏌🏾‍♂️, swimming laps in the pool 🏊🏾‍♂️, or lifting weights at the gym 🏋🏾‍♂️, always striving for balance and personal growth.
+          </p>
         </div>
-      </section>
-    );
-  };
-  
-  export default About2;
-  
+        {/* Highlights Section */}
+        <div className="flex flex-col items-center space-y-8 md:items-start">
+          <div className="flex items-center space-x-4">
+            <span className="text-4xl">🏌🏾‍♂️</span>
+            <p className="text-gray-700 text-lg">Golfing for focus and precision</p>
+          </div>
+          <div className="flex items-center space-x-4">
+            <span className="text-4xl">🏊🏾‍♂️</span>
+            <p className="text-gray-700 text-lg">Swimming to stay active</p>
+          </div>
+          <div className="flex items-center space-x-4">
+            <span className="text-4xl">🏋🏾‍♂️</span>
+            <p className="text-gray-700 text-lg">Weightlifting to build strength</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;

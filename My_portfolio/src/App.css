@@ -1,3 +1,33 @@
+
+
+/* Define theme variables */
+:root {
+  --base-color: #ffffff;
+  --text-color: #121212;
+  --accent-color: #9c27b0; /* Example light accent */
+}
+
+[data-theme="dark"] {
+  --base-color: #121212;
+  --text-color: #f2f2f2;
+  --accent-color: #503050;
+}
+
+/* Apply variables */
+body {
+  background-color: #ffffff;/*fallback for older browsers*/
+  background-color: var(--base-color);
+  color: #121212; /* Fallback for older browsers */
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+  color: var(--accent-color);
+}
+
+
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -40,3 +70,5 @@
 .read-the-docs {
   color: #888;
 }
+
+
