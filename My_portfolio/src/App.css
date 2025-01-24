@@ -3,12 +3,16 @@
   --base-color: #ffffff;
   --text-color: #121212;
   --accent-color: #9c27b0; /* Example light accent */
+  --cursor-color: #121212;
+  --input-color: #121212;
 }
 
 [data-theme="dark"] {
   --base-color: #1F2937;
   --text-color: #f2f2f2;
   --accent-color: #503050;
+  --cursor-color: #ffffff;
+  --input-color: #ffffff;
 }
 
 /* Apply variables */
@@ -21,6 +25,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100vw;
+  cursor: var(--cursor-color);
 }
 
 .dark {
@@ -87,4 +92,22 @@ a {
 
 .read-the-docs {
   color: #888;
+}
+
+body[data-theme="dark"] input {
+  color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+
+body[data-theme="dark"] input:focus {
+  border-color: #ffffff !important;
+}
+
+body[data-theme="dark"] textarea {
+  color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+
+body[data-theme="dark"] textarea:focus {
+  border-color: #ffffff !important;
 }
