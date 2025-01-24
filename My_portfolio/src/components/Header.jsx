@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ThemeToggle from './ThemeToggle';
+//import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -48,20 +48,20 @@ const Header = () => {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-sm font-semibold text-gray-900">
+          <a href="#" className="text-sm font-semibold text-gray-900 dark:text-white">
             Home
           </a>
-          <a href="#" className="text-sm font-semibold text-gray-900">
+          <a href="#" className="text-sm font-semibold text-gray-900 dark:text-white">
             About
           </a>
-          <a href="#" className="text-sm font-semibold text-gray-900">
+          <a href="#" className="text-sm font-semibold text-gray-900 dark:text-white">
             Projects
           </a>
-          <a href="#" className="text-sm font-semibold text-gray-900">
+          <a href="#" className="text-sm font-semibold text-gray-900 dark:text-white">
             Contact
           </a>
         </div>
-      </nav>
+      </nav> 
 
       {/* Mobile menu */}
       {menuOpen && (
@@ -73,7 +73,7 @@ const Header = () => {
           ></div>
 
           {/* Sliding menu */}
-          <div className="fixed inset-y-0 right-0 w-64 bg-white shadow-lg z-20">
+          <div className="fixed inset-y-0 right-0 w-64 bg-white shadow-lg z-20 dark:bg-gray-800">
             <button
               type="button"
               className="absolute top-4 right-4 text-gray-700"
@@ -97,22 +97,22 @@ const Header = () => {
             </button>
             <ul className="mt-12 space-y-4 p-4">
               <li>
-                <a href="#" className="block text-gray-900 font-semibold">
+                <a href="#" className="block text-gray-900 font-semibold dark:text-white">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#" className="block text-gray-900 font-semibold">
+                <a href="#" className="block text-gray-900 font-semibold dark:text-white">
                   About
                 </a>
               </li>
               <li>
-                <a href="#" className="block text-gray-900 font-semibold">
+                <a href="#" className="block text-gray-900 font-semibold dark:text-white">
                   Projects
                 </a>
               </li>
               <li>
-                <a href="#" className="block text-gray-900 font-semibold">
+                <a href="#" className="block text-gray-900 font-semibold dark:text-white">
                   Contact
                 </a>
               </li>

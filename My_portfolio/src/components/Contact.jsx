@@ -32,10 +32,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-start bg-white">
+    <div className="flex min-h-screen items-center justify-start bg-white dark:bg-gray-800">
       <div className="mx-auto w-full max-w-lg">
-        <h1 className="text-4xl font-medium">Get in Touch</h1>
-        <p className="mt-3">Send me a message:</p>
+        <h1 className="text-4xl font-medium dark:text-white">Get in Touch</h1>
+        <p className="mt-3 dark:text-gray-500">Send me a message:</p>
 
         <form onSubmit={handleSubmit} className="mt-10">
           <div className="grid gap-6 sm:grid-cols-2">
@@ -87,7 +87,7 @@ const ContactForm = () => {
 
           <button
             type="submit"
-            className="mt-5 rounded-md bg-black px-10 py-2 text-white hover:bg-gray-800 transition-colors duration-300"
+            className="mt-5 rounded-md bg-black px-10 py-2 text-white hover:bg-gray-800 transition-colors duration-300 dark:bg-white dark:text-black dark:hover:bg-gray-400"
           >
             Send Message
           </button>

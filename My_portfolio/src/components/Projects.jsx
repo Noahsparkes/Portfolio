@@ -10,7 +10,7 @@ const ProjectCard = ({
   liveLink = "https://..."
 }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 max-w-sm">
+    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 max-w-sm">
       {/* Project Image */}
       <div className="relative h-40 overflow-hidden">
         <img 
@@ -22,7 +22,7 @@ const ProjectCard = ({
       
       {/* Content */}
       <div className="p-4">
-        <h3 className="text-lg font-bold mb-2">{title}</h3>
+        <h3 className="text-lg font-bold mb-2 dark:text-white">{title}</h3>
         <p className="text-gray-600 text-sm mb-3 line-clamp-2">{description}</p>
         
         {/* Technologies */}
@@ -44,10 +44,10 @@ const ProjectCard = ({
               href={githubLink}
               target="_blank"
               rel="noopener noreferrer" 
-              className="flex items-center gap-1 text-sm text-gray-700 hover:text-black"
+              className="flex items-center gap-1 text-sm text-gray-700 hover:text-black dark:text-white dark:hover:text-gray-700"
             >
               <Github size={16} />
-              <span>Code</span>
+              <span className="dark:text-white">Code</span>
             </a>
           )}
           {liveLink && (
@@ -55,10 +55,10 @@ const ProjectCard = ({
               href={liveLink}
               target="_blank"
               rel="noopener noreferrer" 
-              className="flex items-center gap-1 text-sm text-gray-700 hover:text-black"
+              className="flex items-center gap-1 text-sm text-gray-700 hover:text-black dark:text-white dark:hover:text-gray-700" 
             >
               <Link size={16} />
-              <span>Live Demo</span>
+              <span className='dark:text-white'>Live Demo</span>
             </a>
           )}
         </div>
@@ -98,8 +98,8 @@ const ProjectsSection = () => {
 
   return (
     <section className="py-12 ">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">My Work</h2>
+      <div className="container mx-auto px-4 ">
+        <h2 className="text-3xl font-bold text-center mb-8 dark:text-white">My Work</h2>
         
         {/* Grid layout for project cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">

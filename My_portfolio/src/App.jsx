@@ -8,16 +8,15 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import BackToTop from "./components/BackToTop";
-import ThemeToggle from "./components/ThemeToggle";
+//import ThemeToggle from "./components/ThemeToggle";
 import IntroSection from "./components/IntroSection";
-import { ThemeProvider,useTheme } from "./Context/ThemeContext.jsx";
+//import { ThemeProvider,useTheme } from "./Context/ThemeContext.jsx";
 
 const App = () => {
   return (
-    <ThemeProvider>
+    
       <div className="container mx-auto">
         <Header />
-        <ThemeToggle />
         <IntroSection />
         <About />
         <Skills />
@@ -25,7 +24,7 @@ const App = () => {
         <Contact />
         <BackToTop />
       </div>
-    </ThemeProvider>
+    
   );
 };
 

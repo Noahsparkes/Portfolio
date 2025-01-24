@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}', './index.html'],
-  darkMode:'selector',
+  darkMode:'media',
   theme: {
     extend: {},
   },
@@ -11,3 +11,4 @@ export default {
 }
 
 //added in an dark mode selector and nothing more!
+
