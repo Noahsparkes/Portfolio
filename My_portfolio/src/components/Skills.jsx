@@ -1,4 +1,3 @@
-import React from 'react';
 import { Code, Server, GitBranch, Database, Blocks, Cpu } from 'lucide-react';
 
 const Skills = () => {

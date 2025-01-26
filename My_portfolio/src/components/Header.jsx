@@ -27,12 +27,12 @@ const Header = () => {
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-white"
             onClick={toggleMenu}
           >
             <span className="sr-only">Open main menu</span>
             <svg
-              className="h-6 w-6"
+              className="h-6 w-6 "
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"

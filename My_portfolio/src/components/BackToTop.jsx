@@ -56,7 +56,7 @@ const BackToTop = () => {
       <div
         className="container mx-auto mt-4 text-center dark:text-white">
           <div>
-          <h1>© Noah Sparkes. All Rights Reserved.</h1>
+          <h1>© Noah Sparkes. All rights reserved.</h1>
         </div>
       </div>
     </>

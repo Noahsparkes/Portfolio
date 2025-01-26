@@ -3,7 +3,6 @@
   --base-color: #ffffff;
   --text-color: #121212;
   --accent-color: #9c27b0; /* Example light accent */
-  --cursor-color: #121212;
   --input-color: #121212;
 }
 
@@ -11,10 +10,31 @@
   --base-color: #1F2937;
   --text-color: #f2f2f2;
   --accent-color: #503050;
-  --cursor-color: #ffffff;
-  --input-color: #ffffff;
+  
 }
+/* cursor styles */
+.cursor-dot{
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--text-color);
 
+}
+.cursor-outline{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--text-color);
+}
+.cursor-dot,
+.cursor-outline{
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1;
+}
 /* Apply variables */
 body {
   background-color: #ffffff;/*fallback for older browsers*/
@@ -25,11 +45,17 @@ body {
   margin: 0;
   padding: 0;
   width: 100vw;
-  cursor: var(--cursor-color);
+  cursor: none; 
 }
 
 .dark {
   @apply bg-gray-800;
+   .cursor-dot{
+    background-color: #f2f2f2;
+   }
+   .cursor-outline{
+    background-color: #f2f2f2;
+   }
 }
 
 
@@ -86,10 +112,24 @@ a {
   }
 }
 
+.cursor-dot,
+.cursor-outline {
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media (prefers-color-scheme: dark) {
+  .cursor-dot{
+    background-color: #fff;
+  }
+  .cursor-outline{
+    border:  1px solid #fff;
+    box-shadow:  0 0 0 2px #fff;
+  }
+}
 .card {
   padding: 2em;
 }
-
+/* might be delete-able */
 .read-the-docs {
   color: #888;
 }
