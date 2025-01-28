@@ -34,7 +34,7 @@ const ScrollAnimation = () => {
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 mt-4" 
+            className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 mt-4 cursor-none" 
           >
             Get in Touch
           </motion.button>
@@ -47,12 +47,3 @@ const ScrollAnimation = () => {
 export default ScrollAnimation;
 
 
-
-/* To Do:
-
- 1. Expand about section./
- 2. Finish adding scrolling effect.
- 3. Add dark mode.
- 4. Add animations.
- 5. fix this linter issue,clean up code.
-*/

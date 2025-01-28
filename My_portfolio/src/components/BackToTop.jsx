@@ -32,7 +32,7 @@ const BackToTop = () => {
         onClick={handleBackToTop}
         className={`fixed bottom-5 right-5 ${
           isVisible ? "block" : "hidden"
-        } rounded-full bg-slate-800 dark:bg-white dark:text-black dark:hover:bg-gray-700 dark:focus:bg-gray-700 dark:hover:text-white p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-gray-600 hover:shadow-lg focus:bg-slate-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-slate-800 active:shadow-lg`}
+        } rounded-full bg-slate-800 dark:bg-white dark:text-black dark:hover:bg-gray-700 dark:focus:bg-gray-700 dark:hover:text-white p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-gray-600 hover:shadow-lg focus:bg-slate-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-slate-800 cursor-none active:shadow-lg`}
         aria-label="Back to top"
       >
         <span className="[&>svg]:w-4">

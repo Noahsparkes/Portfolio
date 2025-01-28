@@ -30,7 +30,6 @@ export default App;
 
 
 // to do:
-// add custom cursor
-// add a scroll feature?
+// add custom cursor/
 // finish animations
 // make it functional + projects.

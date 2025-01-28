@@ -87,7 +87,7 @@ const ContactForm = () => {
 
           <button
             type="submit"
-            className="mt-5 rounded-md bg-black px-10 py-2 text-white hover:bg-gray-800 transition-colors duration-300 dark:bg-white dark:text-black dark:hover:bg-gray-400"
+            className="mt-5 rounded-md bg-black px-10 py-2 text-white hover:bg-gray-800 transition-colors duration-300 dark:bg-white dark:text-black dark:hover:bg-gray-400 cursor-none"
           >
             Send Message
           </button>
