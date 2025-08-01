@@ -24,7 +24,7 @@ const ScrollAnimation = () => {
           transition={{ duration: 1 }}
           className="wide-side md:w-2/3 mt-4 md:mt-0 text-center md:text-left"
         >
-          <h1 className="text-2xl lg:text-3xl font-bold dark:text-white">Hi, It's Noah 🖥</h1>
+          <h1 className="text-2xl lg:text-3xl font-bold dark:text-white">Hi, It&apos;s Noah 🖥</h1>
           <h2 className="text-xl lg:text-2xl font-semibold text-gray-700 mt-2 dark:text-white">
             I am a Junior Software Developer
           </h2>
