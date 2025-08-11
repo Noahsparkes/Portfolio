@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import profilePic from "/Users/noah/Personal project 23'/My_portfolio/My_portfolio/src/assets/profile_pic.webp"; 
+import profilePic from "../assets/images/profile_Pic.webp"; // Adjusted import path to match the new structure!
 const ScrollAnimation = () => {
   return (
     <section className="p-4">
