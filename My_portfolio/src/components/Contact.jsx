@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -9,18 +9,22 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Add your form submission logic here
-    // Example with web3forms:
-    // const response = await fetch('https://api.web3forms.com/submit', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   },
-    //   body: JSON.stringify({
-    //     access_key: 'YOUR_ACCESS_KEY_HERE',
-    //     ...formData
-    //   })
-    // });
+     const response = await fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      access_key: 'd6b86f0e-9acf-4f51-8c0d-9903aa5466bc', 
+      ...formData
+    })
+  });
+  if (response.ok) {
+    alert('Message sent!');
+    setFormData({ name: '', email: '', message: '' });
+  } else {
+    alert('Something went wrong. Please try again.');
+  }
   };
 
   const handleChange = (e) => {
@@ -32,7 +36,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-start bg-white dark:bg-gray-800">
+    <div className="flex min-h-screen items-center justify-start bg-white dark:bg-gray-800" id="contact">
       <div className="mx-auto w-full max-w-lg">
         <h1 className="text-4xl font-medium dark:text-white">Get in Touch</h1>
         <p className="mt-3 dark:text-gray-500">Send me a message:</p>

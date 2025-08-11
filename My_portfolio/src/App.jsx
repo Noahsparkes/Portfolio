@@ -28,8 +28,3 @@ const App = () => {
 
 export default App;
 
-
-// to do:
-// add custom cursor/
-// finish animations
-// make it functional + projects.

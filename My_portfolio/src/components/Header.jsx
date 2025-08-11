@@ -1,6 +1,4 @@
-import React, { useState } from 'react';
-//import ThemeToggle from './ThemeToggle';
-
+import { useState } from 'react';
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -21,7 +19,7 @@ const Header = () => {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Noah Sparkes</span>
-            <h1 className="h-8 w-auto">Noah Sparkes</h1>
+            {/* <h1 className="h-8 w-auto">Noah Sparkes</h1> */}
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -48,16 +46,13 @@ const Header = () => {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-sm font-semibold text-gray-900 dark:text-white">
-            Home
-          </a>
-          <a href="#" className="text-sm font-semibold text-gray-900 dark:text-white">
+          <a href="#about" className="text-sm font-semibold text-gray-900 dark:text-white">
             About
           </a>
-          <a href="#" className="text-sm font-semibold text-gray-900 dark:text-white">
+          <a href="#projects" className="text-sm font-semibold text-gray-900 dark:text-white">
             Projects
           </a>
-          <a href="#" className="text-sm font-semibold text-gray-900 dark:text-white">
+          <a href="#contact" className="text-sm font-semibold text-gray-900 dark:text-white">
             Contact
           </a>
         </div>
@@ -97,22 +92,17 @@ const Header = () => {
             </button>
             <ul className="mt-12 space-y-4 p-4">
               <li>
-                <a href="#" className="block text-gray-900 font-semibold dark:text-white">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#" className="block text-gray-900 font-semibold dark:text-white">
+                <a href="#about" className="block text-gray-900 font-semibold dark:text-white">
                   About
                 </a>
               </li>
               <li>
-                <a href="#" className="block text-gray-900 font-semibold dark:text-white">
+                <a href="#projects" className="block text-gray-900 font-semibold dark:text-white">
                   Projects
                 </a>
               </li>
               <li>
-                <a href="#" className="block text-gray-900 font-semibold dark:text-white">
+                <a href="#contact" className="block text-gray-900 font-semibold dark:text-white">
                   Contact
                 </a>
               </li>

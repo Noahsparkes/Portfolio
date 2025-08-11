@@ -1,4 +1,4 @@
-import { Code, Server, GitBranch, Database, Blocks, Cpu } from 'lucide-react';
+import { Code, Server, GitBranch, Database } from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [

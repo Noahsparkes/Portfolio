@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import profilePic from "/Users/noah/Personal project 23'/My_portfolio/My_portfolio/src/assets/profile_pic.webp"; 
 const ScrollAnimation = () => {
   return (
     <section className="p-4">
@@ -11,10 +11,10 @@ const ScrollAnimation = () => {
           transition={{ duration: 1.5 }}
           className="image flex-shrink-0 md:w-1/3"
         >
-          <img
-            src="src/assets/profile_pic.webp"
-            alt="profile-pic"
-            className="w-40 h-40 md:w-60 md:h-60 lg:w-72 lg:h-72 rounded-full object-cover shadow-lg mx-auto md:mx-0"
+          <img 
+          src={profilePic} 
+          alt="profile pic" 
+          className="w-40 h-40 md:w-60 md:h-60 lg:w-72 lg:h-72 rounded-full object-cover shadow-lg mx-auto md:mx-0"
           />
         </motion.div>
         {/* Content Section with Animations */}
@@ -29,15 +29,17 @@ const ScrollAnimation = () => {
             I am a Junior Software Developer
           </h2>
           <p className="text-gray-600 mt-4 text-base lg:text-lg dark:text-white">
-            - Passionate and constantly learning new things about Tech
+            Passionate and constantly learning new things about Tech
           </p>
-          <motion.button
+          <motion.a
+            href="#contact"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 mt-4 cursor-none" 
+            // className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 mt-4 cursor-none block mx-auto md:mx-0"
+            className="px-6 py-3 block w-40 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 mt-8 cursor-none mx-auto md:mx-0"
           >
             Get in Touch
-          </motion.button>
+          </motion.a>
         </motion.div>
       </div>
     </section>

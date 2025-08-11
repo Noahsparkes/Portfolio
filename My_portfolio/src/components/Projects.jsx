@@ -1,5 +1,5 @@
-import React from 'react';
 import { Github, Link } from 'lucide-react';
+import PropTypes from 'prop-types';
 
 const ProjectCard = ({ 
   title = "New Project",
@@ -67,37 +67,46 @@ const ProjectCard = ({
   );
 };
 
+ProjectCard.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  image: PropTypes.string,
+  technologies: PropTypes.arrayOf(PropTypes.string),
+  githubLink: PropTypes.string,
+  liveLink: PropTypes.string,
+};
+
 const ProjectsSection = () => {
   // Array of project data
   const projects = [
     {
-      title: "Portfolio Website",
-      description: "Personal portfolio built with React and Tailwind CSS, featuring responsive design and modern animations.",
+      title: "Fastest Lap",
+      description: "A web application to track and analyze lap times for racing enthusiasts, featuring real-time data visualization.",
       image: "https://via.placeholder.com/400x300",
-      technologies: ["React", "Tailwind CSS", "Vite"],
-      githubLink: "https://github.com/yourusername/portfolio",
-      liveLink: "https://yourportfolio.com"
+      technologies: ["Typescript","React", "Tailwind CSS", "Vite","Supabase"],
+      githubLink: "https://github.com/Noahsparkes/Fastest-Lap",
+      liveLink: "https://fastest-lap-ruby.vercel.app/"
     },
     {
-      title: "E-commerce Dashboard",
-      description: "Admin dashboard for managing products, orders, and customer data with real-time updates.",
+      title: "Age Calculator",
+      description: "A simple web application to calculate age based on birthdate input.",
       image: "https://via.placeholder.com/400x300",
-      technologies: ["React", "Node.js", "MongoDB"],
-      githubLink: "https://github.com/yourusername/dashboard",
-      liveLink: "https://dashboard-demo.com"
+      technologies: ["JavaScript", "HTML", "CSS"],
+      githubLink: "https://github.com/Noahsparkes/Age-calculator-app",
+      liveLink: "https://heroic-bunny-0c7e28.netlify.app/"
     },
     {
-      title: "Weather App",
-      description: "Real-time weather application with location-based forecasts and interactive maps.",
+      title: "Random Quote Generator",
+      description: "A web application that fetches and displays random quotes from an API.",
       image: "https://via.placeholder.com/400x300",
-      technologies: ["React", "Weather API", "Maps"],
-      githubLink: "https://github.com/yourusername/weather",
-      liveLink: "https://weather-demo.com"
+      technologies: ["TypeScript", "Vite","React", " REST API"],
+      githubLink: "https://github.com/Noahsparkes/Random-quote-generator",
+      liveLink: "https://random-quote-generator-tau-sepia.vercel.app/"
     }
   ];
 
   return (
-    <section className="py-12 ">
+    <section className="py-12 " id='projects'>
       <div className="container mx-auto px-4 ">
         <h2 className="text-3xl font-bold text-center mb-8 dark:text-white">My Work</h2>
         
@@ -113,5 +122,6 @@ const ProjectsSection = () => {
 };
 
 export default ProjectsSection;
+
 
 
