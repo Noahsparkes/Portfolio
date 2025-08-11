@@ -35,7 +35,6 @@ const ScrollAnimation = () => {
             href="#contact"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            // className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 mt-4 cursor-none block mx-auto md:mx-0"
             className="px-6 py-3 block w-40 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 mt-8 cursor-none mx-auto md:mx-0"
           >
             Get in Touch

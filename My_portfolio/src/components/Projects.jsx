@@ -1,5 +1,9 @@
 import { Github, Link } from 'lucide-react';
 import PropTypes from 'prop-types';
+import fastestLapscreenshot from '../assets/images/fastest-lap-screenshot.png'; 
+import agecalulatorScreenshot from '../assets/images/age-calculator-screenshot.png';
+import adviceGeneratorScreenshot from '../assets/images/advice-generator-screenshot.png';
+
 
 const ProjectCard = ({ 
   title = "New Project",
@@ -82,7 +86,7 @@ const ProjectsSection = () => {
     {
       title: "Fastest Lap",
       description: "A web application to track and analyze lap times for racing enthusiasts, featuring real-time data visualization.",
-      image: "https://via.placeholder.com/400x300",
+      image: fastestLapscreenshot, // Use the imported screenshot variable
       technologies: ["Typescript","React", "Tailwind CSS", "Vite","Supabase"],
       githubLink: "https://github.com/Noahsparkes/Fastest-Lap",
       liveLink: "https://fastest-lap-ruby.vercel.app/"
@@ -90,7 +94,7 @@ const ProjectsSection = () => {
     {
       title: "Age Calculator",
       description: "A simple web application to calculate age based on birthdate input.",
-      image: "https://via.placeholder.com/400x300",
+      image: agecalulatorScreenshot,
       technologies: ["JavaScript", "HTML", "CSS"],
       githubLink: "https://github.com/Noahsparkes/Age-calculator-app",
       liveLink: "https://heroic-bunny-0c7e28.netlify.app/"
@@ -98,7 +102,7 @@ const ProjectsSection = () => {
     {
       title: "Random Quote Generator",
       description: "A web application that fetches and displays random quotes from an API.",
-      image: "https://via.placeholder.com/400x300",
+      image: adviceGeneratorScreenshot,
       technologies: ["TypeScript", "Vite","React", " REST API"],
       githubLink: "https://github.com/Noahsparkes/Random-quote-generator",
       liveLink: "https://random-quote-generator-tau-sepia.vercel.app/"
