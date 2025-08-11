@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import profilePic from "../assets/images/profile_Pic.webp"; // Adjusted import path to match the new structure!
+import profilePic from "../assets/images/profile_pic.webp"; // Adjusted import path to match the new structure!
 const ScrollAnimation = () => {
   return (
     <section className="p-4">
@@ -47,5 +47,7 @@ const ScrollAnimation = () => {
 };
 
 export default ScrollAnimation;
+
+
 
 
