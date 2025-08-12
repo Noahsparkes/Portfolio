@@ -5,5 +5,5 @@ This is the repository for my personal developer portfolio.
 
 ---
 
-![Portfolio Screenshot](./src/assets/images/portfolio-screenshot.png)
+![Portfolio Screenshot](./My_portfolio/src/assets/images/portfolio-screenshot.png)
 
